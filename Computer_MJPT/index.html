@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<title>MajorPT</title>
+		<meta name="viewport" content="width=device-widthinitial-scale=1.0">
+			<style>
+			.container {
+	display:grid;
+	grid-template-columns:1fr 3fr 1fr;
+	grid-template-rows:100px 500px 100px;
+	}
+	
+	.header {
+	background:red;
+	font-size:2em;
+	text-align:center;
+	grid-column:span 3;
+	}
+	.nav {
+	background:orange;
+	font-size:2em;
+	text-align:center;
+	}
+	.content {
+	background:white;
+	font-size:2em;
+	text-align:center;
+	}
+	.aside {
+	background:brown;
+	font-size:2em;
+	text-align:center;
+	}
+	.footer {
+	background:maroon;
+	font-size:2em;
+	text-align:center;
+	grid-column:span 3;
+	}
+
+	@media only screen and (max-width:600px) {
+			.container {
+				display:grid;
+				grid-template-columns:1fr 3fr;
+				grid-template-rows:1fr 3fr 1fr 1fr;
+				
+			}
+				.content {
+			background:white;
+			font-size:2em;
+			text-align:center;
+			grid-column:span 2
+				}
+				.aside {
+				background:brown;
+				font-size:2em;
+				text-align:center;
+				grid-column:span 3
+				}
+				
+		}
+	@media only screen and (max-width:300px) {
+			.container {
+				display:grid;
+				grid-template-columns:1fr;
+				grid-template-rows:1fr 1fr 3fr 1fr 1fr;
+				
+			}
+				.content {
+			background:white;
+			font-size:2em;
+			text-align:center;
+			grid-column:span 3
+				}
+		}
+</style>
+	</head>
+<body>
+
+<div class=container>
+	<div class=header>MAJORPT_RAGASAJO</div>
+	<div class=nav>
+		<a href="ABTME.html">ABOUT ME</a><br>
+		<a href="MYHOBBIES.html">MY HOBBIES</a><br>
+		<a href="MYFAVFOOD.html">MY FAV FOOD</a><br>
+		<a href="MYFAVSPORT.html">MY FAV SPORT</a>
+	</div>
+	<div class=content>
+			<img src="gwapo.jpg" style="width:300px;height:300px">
+		<p>Hi my name is Josh Alexander Q. Ragasajo im a student from DB. Im just
+		a short kid who loves to play games listen to rap and a little bit of punk. I have been
+		on DB since grade 1 so I can say im a bit of a veteran lol.
+	</p></div>
+	<div class=aside>
+		<img src="subscribe.png" style="width:300px;height:300px">
+	</div>
+	<div class=footer>This website is only for school.</div>
+</div>
+</body>
+</html>
